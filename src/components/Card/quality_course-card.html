@@ -1,28 +1,26 @@
-<div class="col-md-3">
-  <div class="product_card">
+<div class="course-item">
+  <div class="course-item__image">
     <img src="{{srcImage}}" alt="" />
   </div>
-  <div class="frame_3">
-    <div class="frame_2">
-      <div class="frame_1"><p>{{frame_1_title}}</p></div>
-      <div class="frame_4">
+  <div class="course-item__content">
+    <div class="review">
+      <div class="review--tag"><p>{{frame_1_title}}</p></div>
+      <div class="review__quantity">
         <include src="./assets/icons/rates.svg"></include>
       </div>
     </div>
-    <h5 class="product_title">{{product_title}}</h5>
-    <p class="paragraph_sec">{{paragraph_sec}}</p>
-    <div class="sales">
-      <div class="frame-sec">
-        <include src="./assets/icons/dowload.svg"></include>
-      </div>
-      <h6 class="quantity-sec">{{quantity_sec}}</h6>
+    <h5 class="course-item__title">{{product_title}}</h5>
+    <p class="course-item__paragraph">{{paragraph_sec}}</p>
+    <div class="course-item__sales">
+      <include src="./assets/icons/dowload.svg"></include>
+      <h6 class="course-item__quantity">{{quantity_sec}}</h6>
     </div>
-    <div class="prices">
-      <h5 class="price_1-sec">{{price_1_sec}}</h5>
-      <h5 class="price_2-sec">{{price_2_sec}}</h5>
+    <div class="course-item-prices">
+      <h5 class="course-prices course-prices--old">{{price_1_sec}}</h5>
+      <h5 class="course-prices course-prices--new">{{price_2_sec}}</h5>
     </div>
-    <button class="learn_more">
-      <h6 class="learn_more-title">Learn More</h6>
+    <button class="learn-more">
+      <h6 class="learn-more__title">Learn More</h6>
       <include src="./assets/icons/arrow-next.svg"></include>
     </button>
   </div>

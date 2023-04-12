@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-.introduce-sec {
+.header {
   .background {
     position: absolute;
     height: 100vh;
@@ -30,11 +30,11 @@
     }
   }
 
-  .introduce-sec__content {
+  .introduce {
     display: flex;
     flex-direction: column;
     align-items: center;
-    .main-content {
+    .introduce__content {
       width: 699px;
       flex-direction: column;
       align-items: center;
@@ -42,11 +42,11 @@
       padding: 75px 0;
       display: flex;
 
-      .header-tag-sec {
+      .introduce--tag {
         font-size: 16px;
         color: #ffc652;
       }
-      .headline-sec {
+      .introduce__headline {
         width: 542px;
         text-align: center;
         letter-spacing: 0.2px;
@@ -54,7 +54,7 @@
         font-size: 56px;
         line-height: 80px;
       }
-      .sub-headline {
+      .introduce__sub-headline {
         letter-spacing: 0.2px;
         color: #fff;
         font-size: 20px;
@@ -62,7 +62,7 @@
         font-weight: 400;
         line-height: 30px;
       }
-      .button {
+      .introduce__btn {
         width: 133px;
         color: #fff;
         background: #ff6551;
@@ -71,7 +71,7 @@
         display: flex;
       }
     }
-    .listCard-content {
+    .introduce__card-list {
       justify-content: space-between;
       width: 100%;
       margin-bottom: 66px;

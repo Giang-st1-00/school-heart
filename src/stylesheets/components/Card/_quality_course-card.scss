@@ -1,34 +1,38 @@
-.quality_course-list {
-  .col-md-3 {
+.quality-course-list {
+  .course-item {
     height: 602px;
     flex-direction: column;
     display: flex;
-    .product_card {
+    .course-item__image {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       padding: 0px;
       background: #ffffff;
+      img {
+        width: 240px;
+        height: 300px;
+      }
     }
-    .frame_3 {
+    .course-item__content {
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
       padding: 25px 18px 35px;
       display: flex;
-      .frame_2 {
+      .review {
         width: 100%;
         justify-content: space-between;
         align-items: center;
         display: flex;
-        .frame_1 {
+        .review--tag {
           font-weight: 700;
           font-size: 14px;
           line-height: 24px;
           letter-spacing: 0.2px;
           color: #ff6551;
         }
-        .frame_4 {
+        .review__quantity {
           background: #26335d;
           border-radius: 20px;
           align-items: center;
@@ -36,29 +40,28 @@
           display: flex;
         }
       }
-      .product_title {
+      .course-item__title {
         font-weight: 700;
         font-size: 16px;
         line-height: 24px;
         letter-spacing: 0.1px;
         color: #252b42;
       }
-      .paragraph_sec {
+      .course-item__paragraph {
         font-weight: 400;
         font-size: 14px;
         line-height: 20px;
         letter-spacing: 0.2px;
         color: #737373;
       }
-      .sales {
+      .course-item__sales {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 0px;
         gap: 10px;
-        .frame-sec {
-        }
-        .quantity-sec {
+
+        .course-item__quantity {
           font-weight: 700;
           font-size: 14px;
           line-height: 24px;
@@ -66,30 +69,27 @@
           color: #737373;
         }
       }
-      .prices {
+      .course-item-prices {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         padding: 5px 3px;
         gap: 5px;
-        .price_1-sec {
+        .course-prices {
           font-weight: 700;
           font-size: 16px;
           line-height: 24px;
           text-align: center;
           letter-spacing: 0.1px;
-          color: #bdbdbd;
-        }
-        .price_2-sec {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 24px;
-          text-align: center;
-          letter-spacing: 0.1px;
-          color: #2435a1;
+          &--old {
+            color: #bdbdbd;
+          }
+          &--new {
+            color: #2435a1;
+          }
         }
       }
-      .learn_more {
+      .learn-more {
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
@@ -98,7 +98,7 @@
         gap: 10px;
         border: 1px solid #ff6551;
         border-radius: 37px;
-        .learn_more-title {
+        .learn_more__title {
         }
       }
     }

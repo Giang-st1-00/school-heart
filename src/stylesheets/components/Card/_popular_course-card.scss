@@ -1,46 +1,46 @@
-.popular_course-list {
+.popular-course-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  .col-md-4 {
+  .course-item {
     display: flex;
     flex-direction: column;
     padding: 50px 40px;
     gap: 30px;
     background: #ffffff;
-    .circle-sec {
+    .course-item__image {
       width: 96px;
       height: 96px;
       background: #ff6551;
       border-radius: 200px;
     }
-    .pricing-title-sec {
+    .course-item__status {
       font-weight: 700;
       font-size: 24px;
       line-height: 32px;
       letter-spacing: 0.1px;
       color: #252b42;
     }
-    .sec {
+    .course-item__title {
       font-size: 14px;
       line-height: 24px;
       letter-spacing: 0.2px;
       color: #737373;
     }
-    .price-sec {
+    .course-item__price {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      .value {
+      .course-item__value {
         font-weight: 700;
         font-size: 40px;
         line-height: 50px;
         letter-spacing: 0.2px;
         color: #ff6551;
       }
-      .type {
+      .course-item__type {
         font-weight: 700;
         font-size: 14px;
         line-height: 24px;
@@ -48,14 +48,14 @@
         color: #8ec2f2;
       }
     }
-    .paragraph_pricing {
+    .course-item__paragraph {
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.2px;
       color: #737373;
     }
-    .btn-sec {
+    .course-item__button {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -63,12 +63,12 @@
       background: #ff6551;
       border-radius: 5px;
     }
-    .features-list {
+    .course-list {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 15px;
-      .feature-item {
+      .course-item-check {
         display: flex;
         flex-direction: row;
         align-items: center;
