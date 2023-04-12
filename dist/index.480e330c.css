@@ -1,0 +1,371 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+caption,
+article,
+figure,
+figcaption,
+footer,
+header,
+section {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+body {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+.container {
+  max-width: inherit;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+header .navbar {
+  z-index: 1;
+  width: 1322px;
+  height: 91px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 661px);
+}
+header .navbar .navbar-brand {
+  width: 187px;
+  height: 58px;
+  position: absolute;
+  top: calc(50% - 28.5px);
+  left: calc(50% - 525px);
+}
+header .navbar .navbar-brand .brand_name {
+  width: 141px;
+  height: 32px;
+  letter-spacing: 0.1px;
+  color: #ececec;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  position: absolute;
+  top: 13px;
+  left: 0;
+}
+header .navbar .navbar-collapse {
+  width: 815px;
+  height: 58px;
+  position: absolute;
+  top: 16px;
+  left: calc(50% - 297px);
+}
+header .navbar .navbar-collapse .nav-list {
+  width: 275px;
+  height: 24px;
+  flex-direction: row;
+  align-items: center;
+  gap: 21px;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 0;
+}
+header .navbar .navbar-collapse .nav-list .nav-list__item a {
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+header .navbar .navbar-collapse .navbar-nav {
+  width: 300px;
+  height: 52px;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: calc(50% - 26px);
+  right: 0;
+}
+header .navbar .navbar-collapse .navbar-nav .title {
+  width: 41px;
+  height: 22px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  top: calc(50% - 11px);
+  left: calc(50% - 20.5px);
+}
+header .navbar .navbar-collapse .navbar-nav .button {
+  width: 137px;
+  height: 52px;
+  color: #fff;
+  background: #ff6551;
+  border-radius: 5px;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+header .navbar .narbar-toggle {
+  width: 24px;
+  height: 13.71px;
+  position: absolute;
+  top: 39px;
+  left: 1298px;
+}
+.introduce-sec-card {
+  width: 328px;
+  height: 300px;
+  background: #fff;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 35px 40px;
+  display: flex;
+  box-shadow: 0 13px 19px #00000012;
+}
+.introduce-sec-card .fixed-width {
+  width: 70px;
+  height: 76px;
+  background: #b6d7ff;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 22px 19px;
+  display: flex;
+}
+.introduce-sec-card .fixed-width .cool-icon {
+  width: 32px;
+  height: 32px;
+}
+.introduce-sec-card .feature-title-sec {
+  width: 205px;
+  height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+.introduce-sec-card .line-div {
+  width: 50px;
+  height: 2px;
+  background: #e74040;
+}
+.introduce-sec-card .feature-description {
+  width: 222px;
+  height: 60px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+header {
+  background: #fff;
+  flex: none;
+  order: 0;
+}
+header .background {
+  height: 100vh;
+  z-index: 1;
+  position: absolute;
+  inset: 0 0 205px;
+}
+header .background .banner-sec {
+  height: 100vh;
+  z-index: 2;
+  background-image: url(Banner.840e0964.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+header .background .filter-sec {
+  z-index: 3;
+  background: #00000080;
+  position: absolute;
+  inset: 0 0 -19px;
+}
+header .introduce-sec__content {
+  z-index: 1;
+  width: 1046px;
+  height: 1006px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 0;
+  display: flex;
+  position: absolute;
+  top: 104px;
+  left: calc(50% - 523px);
+}
+header .introduce-sec__content .main-content {
+  width: 699px;
+  height: 466px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  display: flex;
+}
+header .introduce-sec__content .main-content .header-tag-sec {
+  width: 59px;
+  height: 24px;
+  letter-spacing: 0.1px;
+  color: #ffc652;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+header .introduce-sec__content .main-content .headline-sec {
+  width: 542px;
+  height: 160px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+}
+header .introduce-sec__content .main-content .sub-headline {
+  width: 596px;
+  height: 30px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+header .introduce-sec__content .main-content .button {
+  width: 133px;
+  height: 52px;
+  color: #fff;
+  background: #ff6551;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 40px;
+  display: flex;
+}
+header .introduce-sec__content .listCard-content {
+  width: 1046px;
+  height: 300px;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  display: flex;
+}
+.main {
+  overflow: hidden;
+}
+/*# sourceMappingURL=index.480e330c.css.map */

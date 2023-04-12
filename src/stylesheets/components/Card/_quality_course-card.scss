@@ -1,0 +1,106 @@
+.quality_course-list {
+  .col-md-3 {
+    height: 602px;
+    flex-direction: column;
+    display: flex;
+    .product_card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      background: #ffffff;
+    }
+    .frame_3 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 25px 18px 35px;
+      display: flex;
+      .frame_2 {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        .frame_1 {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #ff6551;
+        }
+        .frame_4 {
+          background: #26335d;
+          border-radius: 20px;
+          align-items: center;
+          padding: 4px;
+          display: flex;
+        }
+      }
+      .product_title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #252b42;
+      }
+      .paragraph_sec {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: #737373;
+      }
+      .sales {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        .frame-sec {
+        }
+        .quantity-sec {
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #737373;
+        }
+      }
+      .prices {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 5px 3px;
+        gap: 5px;
+        .price_1-sec {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          letter-spacing: 0.1px;
+          color: #bdbdbd;
+        }
+        .price_2-sec {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          letter-spacing: 0.1px;
+          color: #2435a1;
+        }
+      }
+      .learn_more {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
+        border: 1px solid #ff6551;
+        border-radius: 37px;
+        .learn_more-title {
+        }
+      }
+    }
+  }
+}
