@@ -91,6 +91,9 @@
         border-radius: 5px;
         padding: 15px 40px;
         display: flex;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
     .introduce__card-list {

@@ -5,7 +5,6 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 40px;
-  overflow: hidden;
   padding-bottom: 60px;
   @include desktop {
     justify-content: center;
@@ -17,7 +16,14 @@
     padding: 50px 30px;
     background: #ffffff;
     gap: 13px;
+
+    @include tablet {
+      width: 280px;
+      margin: 0 auto;
+    }
+
     @include desktop {
+      width: 237px;
       gap: 30px;
       padding: 50px 40px;
     }
@@ -77,6 +83,9 @@
       background: #ff6551;
       border-radius: 5px;
       padding: 15px 15px;
+      &:hover {
+        cursor: pointer;
+      }
 
       @include desktop {
         padding: 15px 40px;

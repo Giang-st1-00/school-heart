@@ -1,8 +1,19 @@
+@use "../../abstracts/" as *;
+
 .quality-course-list {
   .course-item {
     height: 602px;
     flex-direction: column;
     display: flex;
+
+    @include tablet {
+      width: 280px;
+      margin: 0 auto;
+    }
+
+    @include desktop {
+      width: 237px;
+    }
     .course-item__image {
       display: flex;
       flex-direction: column;
@@ -10,7 +21,7 @@
       padding: 0px;
       background: #ffffff;
       img {
-        width: 240px;
+        // width: 240px;
         height: 300px;
       }
     }
@@ -98,6 +109,9 @@
         gap: 10px;
         border: 1px solid #ff6551;
         border-radius: 37px;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

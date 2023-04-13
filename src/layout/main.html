@@ -12,7 +12,7 @@
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
-          <div class="learn-more">
+          <div class="learn-more" onclick="location.href='#'">
             <h6 class="learn-more__title">Learn More</h6>
             <include src="./assets/icons/arrow-next.svg"></include>
           </div>
@@ -30,7 +30,7 @@
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </div>
-          <div class="learn-more">
+          <div class="learn-more" onclick="location.href='#'">
             <h6 class="learn-more__title">Learn More</h6>
             <include src="./assets/icons/arrow-next.svg"></include>
           </div>
@@ -54,22 +54,27 @@
           </p>
         </div>
       </div>
-      <div class="quality-course-list" data-aos="fade-up">
-        <include
-          src="./components/Card/quality_course-card.html"
-          locals='{
-            "srcImage" : "../assets/images/quality_education/quality_course_1.jpg",
-            "frame_1_title" : "Books Liberary",
-            "product_title" : "Our Experts Teacher",
-            "paragraph_sec" : "We focus on ergonomics and meeting you....",
-            "quantity_sec" : "15 Sales",
-            "price_1_sec" : "$16.48",
-            "price_2_sec" : "$6.48"
-          }'
-        ></include>
-        <include
-          src="./components/Card/quality_course-card.html"
-          locals='{
+
+      <div class="swiper mySwiper quality-course-list" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <include
+              src="./components/Card/quality_course-card.html"
+              locals='{
+                "srcImage" : "../assets/images/quality_education/quality_course_1.jpg",
+                "frame_1_title" : "Books Liberary",
+                "product_title" : "Our Experts Teacher",
+                "paragraph_sec" : "We focus on ergonomics and meeting you....",
+                "quantity_sec" : "15 Sales",
+                "price_1_sec" : "$16.48",
+                "price_2_sec" : "$6.48"
+              }'
+            ></include>
+          </div>
+          <div class="swiper-slide">
+            <include
+              src="./components/Card/quality_course-card.html"
+              locals='{
             "srcImage" : "../assets/images/quality_education/quality_course_2.jpg",
             "frame_1_title" : "training Courses",
             "product_title" : "Watch our Courses",
@@ -78,22 +83,27 @@
             "price_1_sec" : "$16.48",
             "price_2_sec" : "$6.48"
           }'
-        ></include>
-        <include
-          src="./components/Card/quality_course-card.html"
-          locals='{
-            "srcImage" : "../assets/images/quality_education/quality_course_3.jpg",
-            "frame_1_title" : "Expert instruction",
-            "product_title" : "Watch our Courses",
-            "paragraph_sec" : "We focus on ergonomics and meeting you....",
-            "quantity_sec" : "15 Sales",
-            "price_1_sec" : "$16.48",
-            "price_2_sec" : "$6.48"
-          }'
-        ></include>
-        <include
-          src="./components/Card/quality_course-card.html"
-          locals='{
+            ></include>
+          </div>
+          <div class="swiper-slide">
+            <include
+              src="./components/Card/quality_course-card.html"
+              locals='{
+                "srcImage" : "../assets/images/quality_education/quality_course_3.jpg",
+                "frame_1_title" : "Expert instruction",
+                "product_title" : "Watch our Courses",
+                "paragraph_sec" : "We focus on ergonomics and meeting you....",
+                "quantity_sec" : "15 Sales",
+                "price_1_sec" : "$16.48",
+                "price_2_sec" : "$6.48"
+              }'
+            ></include>
+          </div>
+
+          <div class="swiper-slide">
+            <include
+              src="./components/Card/quality_course-card.html"
+              locals='{
             "srcImage" : "../assets/images/quality_education/quality_course_4.jpg",
             "frame_1_title" : "Training Courses",
             "product_title" : "Get Quality Education",
@@ -102,9 +112,11 @@
             "price_1_sec" : "$16.48",
             "price_2_sec" : "$6.48"
           }'
-        ></include>
+            ></include>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <include src="./components/pagination.html"></include>
     </div>
   </div>
   <div class="popular-course">
@@ -119,12 +131,21 @@
           </p>
         </div>
       </div>
-      <div class="popular-course-list" data-aos="fade-up">
-        <include src="./components/Card/popular_course-card.html"></include>
-        <include src="./components/Card/popular_course-card.html"></include>
-        <include src="./components/Card/popular_course-card.html"></include>
+
+      <div class="swiper mySwiper_1 popular-course-list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <include src="./components/Card/popular_course-card.html"></include>
+          </div>
+          <div class="swiper-slide">
+            <include src="./components/Card/popular_course-card.html"></include>
+          </div>
+          <div class="swiper-slide">
+            <include src="./components/Card/popular_course-card.html"></include>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
       </div>
-      <include src="./components/pagination.html"></include>
     </div>
   </div>
   <div class="blog-course">
@@ -204,7 +225,9 @@
       <div class="contact__form">
         <div class="contact__form-mail">
           <input placeholder="Your Email" type="text" class="contact__input" />
-          <button class="contact__button">Subscribe</button>
+          <button onclick="location.href='#'" class="contact__button">
+            Subscribe
+          </button>
         </div>
       </div>
     </div>

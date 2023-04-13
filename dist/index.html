@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/index.b81e2e92.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
   </head>
   <body>
     <header>
@@ -21,7 +23,7 @@
     <div class="container">
       <div class="navbar">
   <div class="navbar__brand">
-    <h3 href="#" class="brand_name">Brandname</h3>
+    <h3 href="/" class="brand_name">Brandname</h3>
   </div>
   <div class="navbar__collapse">
     <ul class="nav-list">
@@ -45,8 +47,8 @@
 
     </ul>
     <div class="navbar-nav">
-      <div class="navbar-nav__title">Login</div>
-      <button class="navbar-nav__btn">
+      <a href="#" class="navbar-nav__title">Login</a>
+      <button onclick="location.href='#'" class="navbar-nav__btn">
         <div>JOIN US</div>
         <div class="icon-arrow--right">
           <img class="" src="/right-arrow.99340f88.svg">
@@ -64,7 +66,9 @@
           <h4 class="introduce__sub-headline">
             Our goal is to make online education work for everyone
           </h4>
-          <button class="introduce__btn">Join Us</button>
+          <button onclick="location.href='#'" class="introduce__btn">
+            Join Us
+          </button>
         </div>
 
         <div class="introduce__card-list" data-aos="fade-up">
@@ -115,7 +119,7 @@
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
-          <div class="learn-more">
+          <div class="learn-more" onclick="location.href='#'">
             <h6 class="learn-more__title">Learn More</h6>
             <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2685_1505)">
@@ -143,7 +147,7 @@
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </div>
-          <div class="learn-more">
+          <div class="learn-more" onclick="location.href='#'">
             <h6 class="learn-more__title">Learn More</h6>
             <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2685_1505)">
@@ -177,8 +181,11 @@
           </p>
         </div>
       </div>
-      <div class="quality-course-list" data-aos="fade-up">
-        <div class="course-item">
+
+      <div class="swiper mySwiper quality-course-list" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="course-item">
   <div class="course-item__image">
     <img src="/quality_course_1.fe9711eb.jpg" alt="">
   </div>
@@ -215,7 +222,7 @@
       <h5 class="course-prices course-prices--old">$16.48</h5>
       <h5 class="course-prices course-prices--new">$6.48</h5>
     </div>
-    <button class="learn-more">
+    <button class="learn-more" onclick="location.href='#'">
       <h6 class="learn-more__title">Learn More</h6>
       <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2685_1505)">
@@ -232,7 +239,9 @@
   </div>
 </div>
 
-        <div class="course-item">
+          </div>
+          <div class="swiper-slide">
+            <div class="course-item">
   <div class="course-item__image">
     <img src="/quality_course_2.22fdde0e.jpg" alt="">
   </div>
@@ -269,7 +278,7 @@
       <h5 class="course-prices course-prices--old">$16.48</h5>
       <h5 class="course-prices course-prices--new">$6.48</h5>
     </div>
-    <button class="learn-more">
+    <button class="learn-more" onclick="location.href='#'">
       <h6 class="learn-more__title">Learn More</h6>
       <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2685_1505)">
@@ -286,7 +295,9 @@
   </div>
 </div>
 
-        <div class="course-item">
+          </div>
+          <div class="swiper-slide">
+            <div class="course-item">
   <div class="course-item__image">
     <img src="/quality_course_3.9694c33b.jpg" alt="">
   </div>
@@ -323,7 +334,7 @@
       <h5 class="course-prices course-prices--old">$16.48</h5>
       <h5 class="course-prices course-prices--new">$6.48</h5>
     </div>
-    <button class="learn-more">
+    <button class="learn-more" onclick="location.href='#'">
       <h6 class="learn-more__title">Learn More</h6>
       <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2685_1505)">
@@ -340,7 +351,10 @@
   </div>
 </div>
 
-        <div class="course-item">
+          </div>
+
+          <div class="swiper-slide">
+            <div class="course-item">
   <div class="course-item__image">
     <img src="/quality_course_4.fcdfeab9.jpg" alt="">
   </div>
@@ -377,7 +391,7 @@
       <h5 class="course-prices course-prices--old">$16.48</h5>
       <h5 class="course-prices course-prices--new">$6.48</h5>
     </div>
-    <button class="learn-more">
+    <button class="learn-more" onclick="location.href='#'">
       <h6 class="learn-more__title">Learn More</h6>
       <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2685_1505)">
@@ -394,24 +408,10 @@
   </div>
 </div>
 
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="pagination-container wow zoomIn mar-b-1x" data-wow-duration="0.5s">
-  <ul class="pagination">
-    <li class="pagination-item is-active">
-      <a class="pagination-link">1</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link">2</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link">3</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link">4</a>
-    </li>
-  </ul>
-</div>
-
     </div>
   </div>
   <div class="popular-course">
@@ -426,8 +426,11 @@
           </p>
         </div>
       </div>
-      <div class="popular-course-list" data-aos="fade-up">
-        <div class="course-item">
+
+      <div class="swiper mySwiper_1 popular-course-list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="course-item">
   <div class="course-item__image">
     <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 48C0 21.4903 21.4903 0 48 0V0C74.5097 0 96 21.4903 96 48V48C96 74.5097 74.5097 96 48 96V96C21.4903 96 0 74.5097 0 48V48Z" fill="#FF6551"></path>
@@ -444,7 +447,9 @@
   <p class="course-item__paragraph">
     Slate helps you see how many more days you need...
   </p>
-  <button class="course-item__button">Try for free</button>
+  <button onclick="location.href='#'" class="course-item__button">
+    Try for free
+  </button>
   <div class="course-list">
     <div class="course-item-check">
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -524,7 +529,9 @@
   </div>
 </div>
 
-        <div class="course-item">
+          </div>
+          <div class="swiper-slide">
+            <div class="course-item">
   <div class="course-item__image">
     <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 48C0 21.4903 21.4903 0 48 0V0C74.5097 0 96 21.4903 96 48V48C96 74.5097 74.5097 96 48 96V96C21.4903 96 0 74.5097 0 48V48Z" fill="#FF6551"></path>
@@ -541,7 +548,9 @@
   <p class="course-item__paragraph">
     Slate helps you see how many more days you need...
   </p>
-  <button class="course-item__button">Try for free</button>
+  <button onclick="location.href='#'" class="course-item__button">
+    Try for free
+  </button>
   <div class="course-list">
     <div class="course-item-check">
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -621,7 +630,9 @@
   </div>
 </div>
 
-        <div class="course-item">
+          </div>
+          <div class="swiper-slide">
+            <div class="course-item">
   <div class="course-item__image">
     <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 48C0 21.4903 21.4903 0 48 0V0C74.5097 0 96 21.4903 96 48V48C96 74.5097 74.5097 96 48 96V96C21.4903 96 0 74.5097 0 48V48Z" fill="#FF6551"></path>
@@ -638,7 +649,9 @@
   <p class="course-item__paragraph">
     Slate helps you see how many more days you need...
   </p>
-  <button class="course-item__button">Try for free</button>
+  <button onclick="location.href='#'" class="course-item__button">
+    Try for free
+  </button>
   <div class="course-list">
     <div class="course-item-check">
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -718,24 +731,10 @@
   </div>
 </div>
 
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
       </div>
-      <div class="pagination-container wow zoomIn mar-b-1x" data-wow-duration="0.5s">
-  <ul class="pagination">
-    <li class="pagination-item is-active">
-      <a class="pagination-link">1</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link">2</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link">3</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link">4</a>
-    </li>
-  </ul>
-</div>
-
     </div>
   </div>
   <div class="blog-course">
@@ -839,7 +838,9 @@
       <div class="contact__form">
         <div class="contact__form-mail">
           <input placeholder="Your Email" type="text" class="contact__input">
-          <button class="contact__button">Subscribe</button>
+          <button onclick="location.href='#'" class="contact__button">
+            Subscribe
+          </button>
         </div>
       </div>
     </div>
@@ -853,40 +854,40 @@
         <div class="category-info">
   <h5 class="category-info__title">Company Info</h5>
   <div class="info-list">
-    <div class="info-item">About Us</div>
-    <div class="info-item">Carrier</div>
-    <div class="info-item">We are hiring</div>
-    <div class="info-item">Blog</div>
+    <a href="#" class="info-item">About Us</a>
+    <a href="#" class="info-item">Carrier</a>
+    <a href="#" class="info-item">We are hiring</a>
+    <a href="#" class="info-item">Blog</a>
   </div>
 </div>
 
         <div class="category-info">
   <h5 class="category-info__title">Legal</h5>
   <div class="info-list">
-    <div class="info-item">About Us</div>
-    <div class="info-item">Carrier</div>
-    <div class="info-item">We are hiring</div>
-    <div class="info-item">Blog</div>
+    <a href="#" class="info-item">About Us</a>
+    <a href="#" class="info-item">Carrier</a>
+    <a href="#" class="info-item">We are hiring</a>
+    <a href="#" class="info-item">Blog</a>
   </div>
 </div>
 
         <div class="category-info">
   <h5 class="category-info__title">Features</h5>
   <div class="info-list">
-    <div class="info-item">About Us</div>
-    <div class="info-item">Carrier</div>
-    <div class="info-item">We are hiring</div>
-    <div class="info-item">Blog</div>
+    <a href="#" class="info-item">About Us</a>
+    <a href="#" class="info-item">Carrier</a>
+    <a href="#" class="info-item">We are hiring</a>
+    <a href="#" class="info-item">Blog</a>
   </div>
 </div>
 
         <div class="category-info">
   <h5 class="category-info__title">Resources</h5>
   <div class="info-list">
-    <div class="info-item">About Us</div>
-    <div class="info-item">Carrier</div>
-    <div class="info-item">We are hiring</div>
-    <div class="info-item">Blog</div>
+    <a href="#" class="info-item">About Us</a>
+    <a href="#" class="info-item">Carrier</a>
+    <a href="#" class="info-item">We are hiring</a>
+    <a href="#" class="info-item">Blog</a>
   </div>
 </div>
 
@@ -993,7 +994,70 @@
     <script>AOS.init();
 
 </script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+        enabled: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+        },
+        1200: {
+            slidesPerView: 4,
+            slidesPerGroup: 2
+        }
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar"
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    }
+});
+var swiper_1 = new Swiper(".mySwiper_1", {
+    slidesPerView: 1,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+        enabled: true
+    },
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            slidesPerGroup: 2
+        },
+        1200: {
+            slidesPerView: 3,
+            slidesPerGroup: 2
+        }
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar"
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    }
+});
+
 </script>
   <script src="/pages.0155c232.js"></script></body>
 </html>

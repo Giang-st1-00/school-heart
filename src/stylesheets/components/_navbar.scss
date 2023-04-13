@@ -17,6 +17,11 @@
     .navbar__brand {
       display: none;
       align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
       @include tablet {
         display: flex;
       }
@@ -78,6 +83,9 @@
           font-size: 14px;
           font-weight: 700;
           line-height: 22px;
+          &:hover {
+            cursor: pointer;
+          }
         }
         .navbar-nav__btn {
           width: 137px;
@@ -89,6 +97,9 @@
           padding: 15px 25px;
           display: flex;
           align-items: center;
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }

@@ -53,6 +53,10 @@
         align-items: center;
         gap: 10px;
         display: flex;
+
+        &:hover {
+          cursor: pointer;
+        }
         .learn-more__title {
           width: 82px;
           height: 24px;
@@ -120,6 +124,9 @@
         align-items: center;
         gap: 10px;
         display: flex;
+        &:hover {
+          cursor: pointer;
+        }
         .learn-more__title {
           color: #ff6551;
           font-size: 14px;
@@ -129,6 +136,7 @@
     }
     .client-target__image {
       display: none;
+
       @include tablet {
         display: initial;
       }
@@ -138,6 +146,9 @@
         & img {
           width: 90%;
         }
+      }
+      img {
+        border-radius: 20px;
       }
     }
   }
@@ -437,6 +448,9 @@
         text-align: center;
         letter-spacing: 0.2px;
         color: #ffffff;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
