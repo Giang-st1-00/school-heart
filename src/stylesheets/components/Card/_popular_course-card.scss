@@ -1,15 +1,26 @@
+@use "../../abstracts/" as *;
+
 .popular-course-list {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: flex-start;
   gap: 40px;
+  overflow: hidden;
+  padding-bottom: 60px;
+  @include desktop {
+    justify-content: center;
+    padding: 0;
+  }
   .course-item {
     display: flex;
     flex-direction: column;
-    padding: 50px 40px;
-    gap: 30px;
+    padding: 50px 30px;
     background: #ffffff;
+    gap: 13px;
+    @include desktop {
+      gap: 30px;
+      padding: 50px 40px;
+    }
     .course-item__image {
       width: 96px;
       height: 96px;
@@ -54,20 +65,33 @@
       line-height: 20px;
       letter-spacing: 0.2px;
       color: #737373;
+      width: 214px;
+      @include desktop {
+        width: auto;
+      }
     }
     .course-item__button {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 15px 40px;
       background: #ff6551;
       border-radius: 5px;
+      padding: 15px 15px;
+
+      @include desktop {
+        padding: 15px 40px;
+      }
     }
     .course-list {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: 15px;
+      gap: 30px;
+      padding: 22px 0;
+      @include desktop {
+        padding: 0;
+        gap: 15px;
+      }
       .course-item-check {
         display: flex;
         flex-direction: row;

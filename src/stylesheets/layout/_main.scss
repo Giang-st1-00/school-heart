@@ -1,6 +1,11 @@
+@use "../abstracts/" as *;
+
 .about-us {
-  height: 100vh;
-  padding: 100px 0;
+  padding: 50px 0;
+  @include desktop {
+    padding: 100px 0;
+    height: 100vh;
+  }
   .about-us__wrapper {
     display: flex;
     justify-content: space-between;
@@ -8,12 +13,18 @@
     padding: 0px;
     gap: 30px;
     .about-us__image {
+      display: none;
+      @include tablet {
+        display: initial;
+      }
+      @include desktop {
+        display: initial;
+      }
     }
     .about-us__content {
       flex-direction: column;
       gap: 35px;
       display: flex;
-
       .about-us__line {
         width: 94px;
         height: 7px;
@@ -27,11 +38,16 @@
         font-size: 40px;
       }
       .about-us__paragraph {
-        width: 351px;
         letter-spacing: 0.2px;
         color: #737373;
         font-size: 14px;
         line-height: 20px;
+        @include tablet {
+          width: 351px;
+        }
+        @include desktop {
+          width: 351px;
+        }
       }
       .learn-more {
         align-items: center;
@@ -52,16 +68,26 @@
 }
 
 .client-target {
-  padding: 100px 0px;
-  height: 100vh;
+  padding: 50px 0;
+  @include desktop {
+    padding: 100px 0px;
+    height: 100vh;
+  }
   .client-target__wrapper {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    .client-target__image {
+    gap: 30px;
+    .client-target__content {
       display: flex;
       flex-direction: column;
       gap: 35px;
+      @include tablet {
+        width: 50%;
+      }
+      @include tablet {
+        width: auto;
+      }
       .client-target__line {
         width: 94px;
         height: 7px;
@@ -70,18 +96,25 @@
         }
       }
       .client-target__title {
-        width: 419px;
         letter-spacing: 0.2px;
         color: #252b42;
         font-size: 40px;
         line-height: 50px;
+        @include desktop {
+          width: 419px;
+        }
       }
       .client-target__paragraph {
-        width: 351px;
         letter-spacing: 0.2px;
         color: #737373;
         font-size: 14px;
         line-height: 20px;
+        @include tablet {
+          width: 351px;
+        }
+        @include desktop {
+          width: 351px;
+        }
       }
       .learn-more {
         align-items: center;
@@ -94,26 +127,62 @@
         }
       }
     }
-    .client-target__content {
+    .client-target__image {
+      display: none;
+      @include tablet {
+        display: initial;
+      }
+      @include desktop {
+        display: initial;
+        text-align: end;
+        & img {
+          width: 90%;
+        }
+      }
     }
   }
 }
 
 .quality-course {
+  padding: 80px 0;
+  @include desktop {
+    padding: 0;
+  }
+
+  .client-target__line {
+    width: 94px;
+    height: 7px;
+    &--orange {
+      background: #e74040;
+    }
+    @include desktop {
+      display: none;
+    }
+  }
   .quality-course__header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 35px 0;
+    @include desktop {
+      padding: 0px;
+    }
     .quality-course_content {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 25px;
+      @include desktop {
+        gap: 10px;
+      }
       .quality-course--tag {
         letter-spacing: 0.2px;
         color: #ff6551;
         font-size: 14px;
         line-height: 24px;
+        display: none;
+        @include desktop {
+          display: initial;
+        }
       }
       .quality-course__title {
         font-weight: 700;
@@ -123,11 +192,13 @@
         color: #252b42;
       }
       .quality-course__paragraph {
-        width: 469px;
         letter-spacing: 0.2px;
         color: #737373;
         font-size: 14px;
         line-height: 20px;
+        @include desktop {
+          width: 469px;
+        }
       }
     }
   }
@@ -135,6 +206,12 @@
     gap: 30px;
     margin: 50px 0;
     display: flex;
+    overflow: hidden;
+  }
+  .pagination-container {
+    @include desktop {
+      display: none;
+    }
   }
 }
 
@@ -165,22 +242,30 @@
         color: #ffffff;
       }
       .popular-course__paragraph {
-        width: 469px;
         letter-spacing: 0.2px;
         color: #fff;
         font-size: 14px;
         line-height: 20px;
+        @include desktop {
+          width: 469px;
+        }
       }
     }
   }
-  .popular-course-list {
+  .pagination-container {
+    @include desktop {
+      display: none;
+    }
   }
 }
 
 .blog-course {
   background: #fff;
+  overflow: hidden;
   padding: 50px 0;
-  height: 100vh;
+  @include desktop {
+    height: 100vh;
+  }
   .blog-course__content {
     display: flex;
     flex-direction: column;
@@ -204,18 +289,30 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
-      width: 469px;
       letter-spacing: 0.2px;
       color: #737373;
+      @include desktop {
+        width: 469px;
+      }
     }
   }
   .blog-list {
     display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
     .blog-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 25px 25px 0px;
+      margin: 30px 0;
 
       .blog-item__image img {
         border-radius: 50%;
@@ -229,7 +326,9 @@
         padding: 30px;
         gap: 15px;
 
-        width: 458px;
+        @include desktop {
+          width: 458px;
+        }
         .blog-item__paragraph {
           width: 320px;
           font-weight: 400;
@@ -238,8 +337,9 @@
           text-align: center;
           letter-spacing: 0.2px;
           color: #737373;
-        }
-        .star-list {
+          @include tablet {
+            width: auto;
+          }
         }
         .blog-item__info {
           .user-title {
@@ -267,15 +367,24 @@
 .contact {
   align-items: center;
   display: flex;
-  padding: 100px 0;
-  height: 100vh;
+  padding: 50px 0;
+  @include tablet {
+    height: auto;
+    padding: 80px 0;
+  }
+  @include desktop {
+    height: 100vh;
+    padding: 100px 0;
+  }
   .contact__content {
     display: flex;
     margin-bottom: 75px;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    width: 691px;
+    @include desktop {
+      width: 691px;
+    }
     .contact--tag {
       font-weight: 700;
       font-size: 14px;

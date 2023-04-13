@@ -1,6 +1,15 @@
 @use "../abstracts/" as *;
 
 .header {
+  height: auto;
+  @include tablet {
+    height: 100vh;
+  }
+
+  @include desktop {
+    height: auto;
+  }
+
   .background {
     position: absolute;
     height: 100vh;
@@ -11,7 +20,6 @@
     bottom: 205px;
     .banner-sec {
       @include bg-img("../assets/images/background/Banner.jpg");
-      // background: rgba(0, 0, 0, 0.5);
       height: 100vh;
       position: absolute;
       z-index: 2;
@@ -35,24 +43,35 @@
     flex-direction: column;
     align-items: center;
     .introduce__content {
-      width: 699px;
       flex-direction: column;
       align-items: center;
       gap: 30px;
-      padding: 75px 0;
       display: flex;
+      padding: 20px 0px 120px 0;
+      @include tablet {
+        gap: 20px;
+      }
+
+      @include desktop {
+        padding: 75px 0 120px 0;
+        width: 699px;
+      }
 
       .introduce--tag {
         font-size: 16px;
         color: #ffc652;
       }
       .introduce__headline {
-        width: 542px;
         text-align: center;
         letter-spacing: 0.2px;
         color: #fff;
-        font-size: 56px;
-        line-height: 80px;
+        font-size: 30px;
+        line-height: 49px;
+        @include desktop {
+          font-size: 56px;
+          line-height: 80px;
+          width: 542px;
+        }
       }
       .introduce__sub-headline {
         letter-spacing: 0.2px;
@@ -61,6 +80,9 @@
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
+        text-align: center;
+        @include desktop {
+        }
       }
       .introduce__btn {
         width: 133px;
@@ -72,10 +94,20 @@
       }
     }
     .introduce__card-list {
-      justify-content: space-between;
       width: 100%;
       margin-bottom: 66px;
       display: flex;
+      gap: 20px;
+      flex-direction: column;
+
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @include desktop {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
   }
 }

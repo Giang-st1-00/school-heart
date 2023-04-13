@@ -23,7 +23,7 @@
   <div class="client-target">
     <div class="container">
       <div class="client-target__wrapper">
-        <div class="client-target__image" data-aos="fade-right">
+        <div class="client-target__content" data-aos="fade-right">
           <div class="client-target__line client-target__line--orange"></div>
           <h2 class="client-target__title">Every Client Matters</h2>
           <div class="client-target__paragraph">
@@ -35,14 +35,15 @@
             <include src="./assets/icons/arrow-next.svg"></include>
           </div>
         </div>
-        <div class="client-target__content" data-aos="fade-left">
-          <include src="./assets/icons/video-card.svg"></include>
+        <div class="client-target__image" data-aos="fade-left">
+          <img src="../assets/images/client_target/client-target.jpg" alt="" />
         </div>
       </div>
     </div>
   </div>
   <div class="quality-course">
     <div class="container">
+      <div class="client-target__line client-target__line--orange"></div>
       <div class="quality-course__header" data-aos="fade-up">
         <div class="quality-course_content">
           <h6 class="quality-course--tag">Courses</h6>
@@ -103,6 +104,7 @@
           }'
         ></include>
       </div>
+      <include src="./components/pagination.html"></include>
     </div>
   </div>
   <div class="popular-course">
@@ -122,6 +124,7 @@
         <include src="./components/Card/popular_course-card.html"></include>
         <include src="./components/Card/popular_course-card.html"></include>
       </div>
+      <include src="./components/pagination.html"></include>
     </div>
   </div>
   <div class="blog-course">
